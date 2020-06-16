@@ -1,7 +1,5 @@
-class Artist < ActiveRecord::Base 
-a = Artist.new(name: 'Jon')
-
-a.age
-
-a.save
+class AddFavoriteFoodToArtists < ActiveRecord::Migration[5.2] 
+def change
+    add_column :artist, :favorite_food, :string
+end
 end
